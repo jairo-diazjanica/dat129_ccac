@@ -12,7 +12,7 @@ while start <= 100:
     start = start + 2
 #
 
-# Challenge 1: Another way whit for command
+# Challenge 1: Another way with for command
 start = 0
 end = 100
 print ('\n')  
@@ -34,6 +34,7 @@ k,a,b,o,m = ("K"*3,"A"*3, "B"*3,"O"*6,"M"*3)
 print(k,a,b,o,m)
 
 # Challenge 4:
+print ('\n') 
 a = 1
 while a <= 4:
     b = 5
@@ -43,8 +44,25 @@ while a <= 4:
         b = b + 1
     a = a + 1
     
-
-
+# Challenge 5:
+print ('\n') 
+listoflists = [['mn','pa','ut'],['b','p','c'],['echo','charlie','tango']]
+labels = {"state":"US State Abbr: ", "element":"Chemical Element: ", "alpha":"Phonetic Call: "}
+x = 0
+y = 0
+while y <=2:
+    print(labels['state'], listoflists[x][y])
+    y = y + 1
+x = x + 1
+y = 0
+while y <=2:
+    print(labels['element'], listoflists[x][y])
+    y = y + 1
+x = x + 1
+y = 0  
+while y <=2:
+    print(labels['alpha'], listoflists[x][y])
+    y = y + 1
    
 
     
