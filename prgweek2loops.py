@@ -19,7 +19,8 @@ print ('\n')
 for num in range(start, end + 1):
     if num % 2 == 0:
         print(num, end = " ")
-
+#
+        
 # Challenge 2:
 print ('\n')
 w = "KABOOM"
@@ -33,6 +34,17 @@ w = "KABOOM"
 k,a,b,o,m = ("K"*3,"A"*3, "B"*3,"O"*6,"M"*3)
 print(k,a,b,o,m)
 
+#
+# Challenge 3:
+print ("\n")
+a = "askaliceithinkshe'llknow"
+b = -1
+for i in a:
+    b = b + 1
+    if b % 2 == 0:
+        print(a[b], end = " ")
+        
+#
 # Challenge 4:
 print ('\n') 
 a = 1
