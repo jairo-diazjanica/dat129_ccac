@@ -88,9 +88,14 @@ Created on Tue Sep 17 13:14:16 2019
 # This program stores information about Schools.
 # For each School, we store the program of School,
 # The Director name, and phone_number.
+schools = dict()
+
 schools ={'public': {'program': 'IT','director_name': 'jairo', 'phone_number': '(123)456-7421'},
         'private': {'program': 'med', 'director_name': 'tyler', 'phone_number': '(726)853-9234'},
         'semi':{'program': 'law', 'director_name': 'valerie', 'phone_number': '(514)777-5125'}} 
+numElem = len(schools)
+print('\n')
+print("Number of element in the Dictionary--->",numElem)
 
 
 # Show all the information for each school.
@@ -137,6 +142,14 @@ while add_school != 'quit':
     add_program = input("\nADD new Program: ")
     add_director = input("\nADD Director Name: ")
     add_phone = input("\nADD Phone Number ")
+    schools[add_school]= {'add_program','add_director', 'add_phone'}
+print('\n')
+
+# I want to make copy of the Directory, and delete one key
+# from the copy . and we keep the original too
+schoolscopy = schools.copy()
+
+
     
 #    print(schools)  
   
