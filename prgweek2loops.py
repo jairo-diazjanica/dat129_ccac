@@ -76,5 +76,68 @@ while y <=2:
     print(labels['alpha'], listoflists[x][y])
     y = y + 1
    
+# Challenge 6:
+    #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Sep 17 13:14:16 2019
 
+@author: Jairo
+"""
+
+# This program stores information about Schools.
+# For each School, we store the program of School,
+# The Director name, and phone_number.
+schools ={'public': {'program': 'IT','director_name': 'jairo', 'phone_number': '(123)456-7421'},
+        'private': {'program': 'med', 'director_name': 'tyler', 'phone_number': '(726)853-9234'},
+        'semi':{'program': 'law', 'director_name': 'valerie', 'phone_number': '(514)777-5125'}} 
+
+
+# Show all the information for each school.
+for school_name, school_information in schools.items():
+    print('\n')
+    print("Here is what I know about %s school:" % school_name.title())
+    print("program: " + school_information['program'])
+    print("director_name: " + school_information['director_name'])
+    print("phone_number: " + str(school_information['phone_number']))
+
+# Show the type that are currently in the dictionary.
+print('\n')
+print("The following School have been defined:")
+print('\n')
+for type in schools:
+    print("- %s" % type)
+print('\n')  
+
+request = ''
+while request != 'quit':
+    # Allow the user to choose a type of School he/she want info.
+    request = input("\nWhat School would you like to get info ? (or 'quit') ")
+    if request in schools.keys():
+#       print("\n  %s: %s" % (request, schools[request]))
+        
+        print("Program: " + schools[request]['program'])
+        print("Director Name: " + schools[request]['director_name'])
+        print("Phone Number: " + schools[request]['phone_number'])
+    else:
+        # Handle misspellings, and words not yet stored.
+        print("\n  Sorry, I don't know that school.")
+# 
+# Add another type of School
+add_school = ''
+add_program = ''
+add_director = ''
+add_phone = ''
+
+while add_school != 'quit':
+    # Allow the user to ADD a type of School 
+    add_school = input("\nWhat School would you like to ADD? (or 'quit') ")
+    if add_school =='quit':
+        break
+    add_program = input("\nADD new Program: ")
+    add_director = input("\nADD Director Name: ")
+    add_phone = input("\nADD Phone Number ")
+    
+#    print(schools)  
+  
     
