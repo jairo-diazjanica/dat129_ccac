@@ -121,7 +121,6 @@ while opcionmenu != 6:
             print("\nThe Data is : ",directory)
         menu()
 
-
     elif opcionmenu != 6:
         menu()
 
